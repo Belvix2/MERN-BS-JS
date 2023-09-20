@@ -12,7 +12,7 @@
 </head>
 <body>
     <div class="container mt-3">
-        <form class="d-flex flex-column needs-validation" novalidate>
+        <form class="d-flex flex-column needs-validation w-50" novalidate>
             <div class="row mb-3">
                 <div class="input-group has-validation">
                     <label for="inputFirstName" class="col-3 col-form-label">First Name</label>
@@ -24,43 +24,58 @@
                 </div>
             </div>
             <div class="row mb-3">
-                <label for="inputLastName" class="col-sm-3 col-form-label">Last Name</label>
-                <div class="col-sm-9">
-                    <span class="input-group-text p-0 ps-2"><i class="bi bi-person-fill me-2"></i>
-                    <input type="text" class="form-control" id="inputLastName" placeholder="Last Name" required></span>
+                <div class="input-group has-validation">
+                    <label for="inputLastName" class="col-3 col-form-label">Last Name</label>
+                        <span class="input-group-text p-0 ps-2"><i class="bi bi-person-fill me-2"></i></span>
+                        <input type="text" class="form-control" id="inputLastName" placeholder="Last Name" required>
+                        <div class="invalid-feedback">
+                            Please supply your last name.
+                        </div>
                 </div>
             </div>
             <div class="row mb-3">
-                <label for="inputEmail" class="col-sm-3 col-form-label">E-Mail</label>
-                <div class="col-sm-9">
-                    <span class="input-group-text p-0 ps-2"><i class="bi bi-envelope-fill me-2"></i>
-                    <input type="email" class="form-control" id="inputEmail" placeholder="E-Mail Address" required></span>
+                <div class="input-group has-validation">
+                    <label for="inputEmail" class="col-3 col-form-label">Email</label>
+                    <span class="input-group-text p-0 ps-2"><i class="bi bi-envelope-fill me-2"></i></span>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="E-Mail Address" required>
+                    <div class="invalid-feedback">
+                        Please supply your email address.
+                    </div>
                 </div>
             </div>
             <div class="row mb-3">
-                <label for="inputPhone" class="col-sm-3 col-form-label">Phone</label>
-                <div class="col-sm-9">
-                    <span class="input-group-text p-0 ps-2"><i class="bi bi-telephone-fill me-2"></i>
-                    <input type="tel" class="form-control" id="inputPhone" placeholder="(845)555-1212" required></span>
+                <div class="input-group has-validation">
+                    <label for="inputPhone" class="col-3 col-form-label">Phone</label>
+                    <span class="input-group-text p-0 ps-2"><i class="bi bi-telephone-fill me-2"></i></span>
+                    <input type="tel" class="form-control" id="inputPhone" placeholder="(845)555-1212" required>
+                    <div class="invalid-feedback">
+                        Please supply your phone number.
+                    </div>
                 </div>
             </div>
             <div class="row mb-3">
-                <label for="inputAddress" class="col-sm-3 col-form-label">Address</label>
-                <div class="col-sm-9">
-                    <span class="input-group-text p-0 ps-2"><i class="bi bi-house-fill me-2"></i>
-                    <input type="text" class="form-control" id="inputAddress" placeholder="Address" required></span>
+                <div class="input-group has-validation">
+                    <label for="inputAddress" class="col-3 col-form-label">Address</label>
+                    <span class="input-group-text p-0 ps-2"><i class="bi bi-house-fill me-2"></i></span>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="Address" required>
+                    <div class="invalid-feedback">
+                        Please supply your street address.
+                    </div>
                 </div>
             </div>
             <div class="row mb-3">
-                <label for="inputCity" class="col-sm-3 col-form-label">City</label>
-                <div class="col-sm-9">
-                    <span class="input-group-text p-0 ps-2"><i class="bi bi-house-fill me-2"></i>
-                    <input type="text" class="form-control" id="inputCity" placeholder="City" required></span>
+                <div class="input-group has-validation">
+                    <label for="inputCity" class="col-3 col-form-label">City</label>
+                    <span class="input-group-text p-0 ps-2"><i class="bi bi-house-fill me-2"></i></span>
+                    <input type="text" class="form-control" id="inputCity" placeholder="City" required>
+                    <div class="invalid-feedback">
+                        Please supply your city.
+                    </div>
                 </div>
             </div>
             <div class="row mb-3">
-                <label for="inputCity" class="col-sm-3 col-form-label">State</label>
-                <div class="col-sm-9">
+                <div class="input-group ">
+                    <label for="inputState" class="col-3 col-form-label">State</label>
                     <span class="input-group-text p-0 ps-2"><i class="bi bi-list me-2"></i>
                     <select class="form-control form-select" aria-label="Default select example">
                         <option selected>Please select your state</option>
