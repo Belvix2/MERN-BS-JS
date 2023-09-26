@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Javascript Task 2</title>
+    </head>
+    <script>
+        function reverse() {
+            var input_field = document.getElementById("string-input");
+            var result_div = document.querySelector('.result');
+            var text = input_field.value;
+            var reverse = text.split('').sort().join('');
+            result_div.innerHTML = reverse;
+
+        }
+    </script>
+<body>
+    <div >
+        <form> 
+            Enter string to reverse : 
+            <input type="text" id="string-input">
+            <button onclick="reverse()" type="button">Reverse</button>
+        </form>
+        <div style="display: flex; flex-direction: row; margin-top: 10px;">
+            <div style="margin-right: 10px;">Reversed string:   </div>
+            <div class="result"></div>
+        </div>
+       
+    </div>
+</body>
+</html>
